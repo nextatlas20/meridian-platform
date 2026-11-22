@@ -1,10 +1,10 @@
 # Service manifest — consumed by the catalog generator and the deploy pipeline.
-name: ledger-reconciler
-team: finance
+name: usage-meter
+team: metering
 tier: 2
-runtime: python3.11
+runtime: rust1.79
 status: active
-port: 8098
+port: 8093
 healthcheck: /healthz
 description: >-
-  Reconciles the internal ledger against processor settlement files.
+  Aggregates metered usage events into hourly billable counters.

@@ -3,7 +3,7 @@ name: notify-gateway
 team: platform
 tier: 2
 runtime: node20
-status: active
+status: paused
 port: 8096
 healthcheck: /healthz
 description: >-

@@ -1,6 +1,6 @@
 {
-  "branch": "main",
-  "service_count": 8,
+  "branch": "release/2026.08",
+  "service_count": 7,
   "services": [
     {
       "name": "checkout-gateway",
@@ -17,14 +17,6 @@
       "runtime": "python3.12",
       "owner": "@rkapoor",
       "oncall": "#payments-oncall"
-    },
-    {
-      "name": "ledger-reconciler",
-      "team": "finance",
-      "tier": 2,
-      "runtime": "python3.11",
-      "owner": "@dokafor",
-      "oncall": "#finance-oncall"
     },
     {
       "name": "notify-gateway",

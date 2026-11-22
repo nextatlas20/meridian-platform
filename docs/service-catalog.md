@@ -15,7 +15,6 @@ escalation order.
 | --- | --- | --- | --- | --- | --- |
 | checkout-gateway | commerce | T1 | go1.22 | @tnguyen | #commerce-oncall |
 | billing-api | payments | T1 | python3.12 | @rkapoor | #payments-oncall |
-| ledger-reconciler | finance | T2 | python3.11 | @dokafor | #finance-oncall |
 | notify-gateway | platform | T2 | node20 | @nweber | #platform-oncall |
 | pricing-engine | commerce | T2 | python3.11 | @tnguyen | #commerce-oncall |
 | notification-dispatch | platform | T2 | node20 | @nweber | #platform-oncall |
@@ -30,7 +29,6 @@ escalation order.
 
 ## 🧾 Change Log
 
-- 2026-08-21: rebuilt the catalog on `main` after merging `ledger-reconciler`.
 - 2026-08-14: rebuilt the catalog for `release/2026.08`; added `report-builder`.
 - 2026-06-02: renamed `payments-core` to `billing-api` across manifests and docs.
 - 2026-04-20: moved `audit-log` from the platform team to the security team.
