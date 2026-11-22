@@ -13,11 +13,14 @@ escalation order.
 
 | Service | Team | Tier | Runtime | Owner | On-call |
 | --- | --- | --- | --- | --- | --- |
-| checkout-gateway | commerce | T1 | go1.22 | @tnguyen | #commerce-oncall |
 | billing-api | payments | T1 | python3.12 | @rkapoor | #payments-oncall |
-| notify-gateway | platform | T2 | node20 | @nweber | #platform-oncall |
-| pricing-engine | commerce | T2 | python3.11 | @tnguyen | #commerce-oncall |
-| notification-dispatch | platform | T2 | node20 | @nweber | #platform-oncall |
+| checkout-gateway | commerce | T1 | go1.22 | @jmarino | #commerce-oncall |
+| identity-service | platform | T1 | java21 | @nweber | #platform-sre-oncall |
+| invoice-worker | payments | T1 | python3.12 | @rkapoor | #payments-oncall |
+| catalog-search | commerce | T2 | python3.11 | @jmarino | #commerce-oncall |
+| notification-dispatch | platform | T2 | node20 | @nweber | #platform-sre-oncall |
+| pricing-engine | commerce | T2 | python3.11 | @jmarino | #commerce-oncall |
+| usage-meter | metering | T2 | rust1.79 | @agutierrez | #metering-oncall |
 | audit-log | security | T3 | go1.22 | @ssato | #security-oncall |
 | report-builder | analytics | T3 | python3.10 | @lchen | #analytics-oncall |
 

@@ -1,15 +1,7 @@
 {
-  "branch": "release/2026.08",
-  "service_count": 7,
+  "branch": "release/2026.09",
+  "service_count": 10,
   "services": [
-    {
-      "name": "checkout-gateway",
-      "team": "commerce",
-      "tier": 1,
-      "runtime": "go1.22",
-      "owner": "@tnguyen",
-      "oncall": "#commerce-oncall"
-    },
     {
       "name": "billing-api",
       "team": "payments",
@@ -19,19 +11,35 @@
       "oncall": "#payments-oncall"
     },
     {
-      "name": "notify-gateway",
-      "team": "platform",
-      "tier": 2,
-      "runtime": "node20",
-      "owner": "@nweber",
-      "oncall": "#platform-oncall"
+      "name": "checkout-gateway",
+      "team": "commerce",
+      "tier": 1,
+      "runtime": "go1.22",
+      "owner": "@jmarino",
+      "oncall": "#commerce-oncall"
     },
     {
-      "name": "pricing-engine",
+      "name": "identity-service",
+      "team": "platform",
+      "tier": 1,
+      "runtime": "java21",
+      "owner": "@nweber",
+      "oncall": "#platform-sre-oncall"
+    },
+    {
+      "name": "invoice-worker",
+      "team": "payments",
+      "tier": 1,
+      "runtime": "python3.12",
+      "owner": "@rkapoor",
+      "oncall": "#payments-oncall"
+    },
+    {
+      "name": "catalog-search",
       "team": "commerce",
       "tier": 2,
       "runtime": "python3.11",
-      "owner": "@tnguyen",
+      "owner": "@jmarino",
       "oncall": "#commerce-oncall"
     },
     {
@@ -40,7 +48,23 @@
       "tier": 2,
       "runtime": "node20",
       "owner": "@nweber",
-      "oncall": "#platform-oncall"
+      "oncall": "#platform-sre-oncall"
+    },
+    {
+      "name": "pricing-engine",
+      "team": "commerce",
+      "tier": 2,
+      "runtime": "python3.11",
+      "owner": "@jmarino",
+      "oncall": "#commerce-oncall"
+    },
+    {
+      "name": "usage-meter",
+      "team": "metering",
+      "tier": 2,
+      "runtime": "rust1.79",
+      "owner": "@agutierrez",
+      "oncall": "#metering-oncall"
     },
     {
       "name": "audit-log",
