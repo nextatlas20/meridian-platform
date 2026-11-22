@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: billing-api
+team: payments
+tier: 1
+runtime: python3.12
+status: active
+port: 8081
+healthcheck: /healthz
+description: >-
+  Creates invoices, applies tax rules and captures payments for paid plans.

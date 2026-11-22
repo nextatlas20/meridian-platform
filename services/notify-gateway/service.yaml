@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: notify-gateway
+team: platform
+tier: 2
+runtime: node20
+status: active
+port: 8096
+healthcheck: /healthz
+description: >-
+  Legacy SMS gateway kept for the two carriers that still require it.

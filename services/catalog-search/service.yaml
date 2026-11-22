@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: catalog-search
+team: commerce
+tier: 2
+runtime: python3.11
+status: active
+port: 8090
+healthcheck: /healthz
+description: >-
+  Indexes product documents and serves search and facet queries.

@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: audit-log
+team: security
+tier: 3
+runtime: go1.22
+status: active
+port: 8094
+healthcheck: /healthz
+description: >-
+  Append-only audit trail for privileged actions across the platform.

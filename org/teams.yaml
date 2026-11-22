@@ -1,0 +1,36 @@
+# Ownership registry for the meridian-platform monorepo.
+# `lead` is the GitHub handle of the engineering lead (written with its leading @),
+# `paging` is the Slack channel that owns the on-call rotation for the team.
+teams:
+  payments:
+    name: Payments
+    lead: "@rkapoor"
+    paging: "#payments-oncall"
+  commerce:
+    name: Commerce
+    lead: "@jmarino"
+    paging: "#commerce-oncall"
+  platform:
+    name: Platform
+    lead: "@nweber"
+    paging: "#platform-sre-oncall"
+  metering:
+    name: Metering
+    lead: "@agutierrez"
+    paging: "#metering-oncall"
+  security:
+    name: Security
+    lead: "@ssato"
+    paging: "#security-oncall"
+  analytics:
+    name: Analytics
+    lead: "@lchen"
+    paging: "#analytics-oncall"
+  finance:
+    name: Finance Systems
+    lead: "@dokafor"
+    paging: "#finance-oncall"
+  growth:
+    name: Growth
+    lead: "@vmikhailov"
+    paging: "#growth-oncall"

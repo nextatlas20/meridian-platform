@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: pricing-engine
+team: commerce
+tier: 2
+runtime: python3.11
+status: active
+port: 8091
+healthcheck: /healthz
+description: >-
+  Evaluates price rules, promotions and regional tax overrides.

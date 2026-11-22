@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: legacy-sso-bridge
+team: platform
+tier: 3
+runtime: java11
+status: deprecated
+port: 8097
+healthcheck: /healthz
+description: >-
+  SAML bridge for the pre-Okta identity provider.

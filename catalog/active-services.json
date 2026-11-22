@@ -1,0 +1,70 @@
+{
+  "branch": "main",
+  "service_count": 8,
+  "services": [
+    {
+      "name": "checkout-gateway",
+      "team": "commerce",
+      "tier": 1,
+      "runtime": "go1.22",
+      "owner": "@tnguyen",
+      "oncall": "#commerce-oncall"
+    },
+    {
+      "name": "billing-api",
+      "team": "payments",
+      "tier": 1,
+      "runtime": "python3.12",
+      "owner": "@rkapoor",
+      "oncall": "#payments-oncall"
+    },
+    {
+      "name": "ledger-reconciler",
+      "team": "finance",
+      "tier": 2,
+      "runtime": "python3.11",
+      "owner": "@dokafor",
+      "oncall": "#finance-oncall"
+    },
+    {
+      "name": "notify-gateway",
+      "team": "platform",
+      "tier": 2,
+      "runtime": "node20",
+      "owner": "@nweber",
+      "oncall": "#platform-oncall"
+    },
+    {
+      "name": "pricing-engine",
+      "team": "commerce",
+      "tier": 2,
+      "runtime": "python3.11",
+      "owner": "@tnguyen",
+      "oncall": "#commerce-oncall"
+    },
+    {
+      "name": "notification-dispatch",
+      "team": "platform",
+      "tier": 2,
+      "runtime": "node20",
+      "owner": "@nweber",
+      "oncall": "#platform-oncall"
+    },
+    {
+      "name": "audit-log",
+      "team": "security",
+      "tier": 3,
+      "runtime": "go1.22",
+      "owner": "@ssato",
+      "oncall": "#security-oncall"
+    },
+    {
+      "name": "report-builder",
+      "team": "analytics",
+      "tier": 3,
+      "runtime": "python3.10",
+      "owner": "@lchen",
+      "oncall": "#analytics-oncall"
+    }
+  ]
+}

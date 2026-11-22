@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: ledger-reconciler
+team: finance
+tier: 2
+runtime: python3.11
+status: active
+port: 8098
+healthcheck: /healthz
+description: >-
+  Reconciles the internal ledger against processor settlement files.

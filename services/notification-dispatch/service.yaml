@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: notification-dispatch
+team: platform
+tier: 2
+runtime: node20
+status: active
+port: 8092
+healthcheck: /healthz
+description: >-
+  Fan-out service for transactional email, SMS and in-app notifications.

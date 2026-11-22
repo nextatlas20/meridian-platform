@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: checkout-gateway
+team: commerce
+tier: 1
+runtime: go1.22
+status: active
+port: 8080
+healthcheck: /healthz
+description: >-
+  Edge gateway for cart, checkout and order placement traffic.

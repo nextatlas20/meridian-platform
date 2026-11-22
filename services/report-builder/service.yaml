@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: report-builder
+team: analytics
+tier: 3
+runtime: python3.10
+status: active
+port: 8095
+healthcheck: /healthz
+description: >-
+  Builds scheduled finance and product reports from the warehouse.

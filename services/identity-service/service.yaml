@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: identity-service
+team: platform
+tier: 1
+runtime: java21
+status: active
+port: 8084
+healthcheck: /healthz
+description: >-
+  Issues OAuth2 tokens, validates sessions and serves the SCIM endpoints.

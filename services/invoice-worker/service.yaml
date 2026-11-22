@@ -1,0 +1,10 @@
+# Service manifest — consumed by the catalog generator and the deploy pipeline.
+name: invoice-worker
+team: payments
+tier: 1
+runtime: python3.12
+status: active
+port: 8082
+healthcheck: /healthz
+description: >-
+  Consumes the invoice queue, retries failed payment captures and emits receipts.
